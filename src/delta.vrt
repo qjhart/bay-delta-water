@@ -1,0 +1,38 @@
+<OGRVRTDataSource>
+ <OGRVRTWarpedLayer>
+  <OGRVRTLayer name="delta_service_area">
+    <SrcDataSource relativeToVRT="1">DeltaServiceArea_WGS84.shp</SrcDataSource>
+    <SrcLayer>DeltaServiceArea_WGS84</SrcLayer>
+    <Field name="dsa" src="DSA" type="STRING"/>
+  </OGRVRTLayer>
+<TargetSRS>epsg:3310</TargetSRS>
+</OGRVRTWarpedLayer>
+
+ <OGRVRTWarpedLayer>
+  <OGRVRTLayer name="detaw_subareas">
+    <SrcDataSource relativeToVRT="1">DETAW_Subareas_WGS84.shp</SrcDataSource>
+    <SrcLayer>DETAW_Subareas_WGS84</SrcLayer>
+    <Field name="sub" src="NEW_SUB" type="INTEGER"/>
+    <Field name="sub_name" src="SUB_NAME" type="STRING"/>
+    <Field name="region" src="REGION" type="STRING"/>
+  </OGRVRTLayer>
+<TargetSRS>epsg:3310</TargetSRS>
+</OGRVRTWarpedLayer>
+
+<!--
+  <OGRVRTLayer name="delta_service_area">
+    <SrcDataSource relativeToVRT="1">DeltaServiceArea_WGS84.shp</SrcDataSource>
+    <SrcLayer>DeltaServiceArea_WGS84</SrcLayer>
+    <Field name="dsa" src="DSA" type="STRING"/>
+  </OGRVRTLayer>
+
+  <OGRVRTLayer name="detaw_subareas">
+    <SrcDataSource relativeToVRT="1">DETAW_Subareas_WGS84.shp</SrcDataSource>
+    <SrcLayer>DETAW_Subareas_WGS84</SrcLayer>
+    <Field name="sub" src="NEW_SUB" type="INTEGER"/>
+    <Field name="sub_name" src="SUB_NAME" type="STRING"/>
+    <Field name="region" src="REGION" type="STRING"/>
+  </OGRVRTLayer>
+-->
+
+</OGRVRTDataSource>
